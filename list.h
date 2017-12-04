@@ -1,0 +1,113 @@
+//
+// Created by per-joel on 2016-09-06.
+//
+/*
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+typedef void* data;
+
+typedef struct node {
+    struct node* previous;
+    struct node* next;
+    data value;
+} node;
+
+typedef node* list_position;
+typedef void memFreeFunc(data);
+
+typedef struct list {
+    struct node* head;
+    memFreeFunc* freeFunc;
+} list;
+
+list* list_create(void);
+
+data* list_inspect(list *l, list_position p);
+
+list_position list_insert(list *l, list_position p, data d);
+
+list_position list_length(list *l);
+
+//void list_setMemHandler(list *l, memFreefunc *f);
+
+bool list_isEmpty(list *l);
+
+list_position list_first(list *l);
+
+list_position list_end(list *l);
+
+list_position list_next(list *l, list_position p);
+
+list_position list_previous(list *l, list_position p);
+
+list_position list_remove(list *l, list_position p);
+
+void list_free(list *l);
+
+*/
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+typedef void *data;
+
+typedef void memFreeFunc(data);
+
+// element for a double linked list
+typedef struct element {
+    struct element *previous;
+    data data;
+    struct element *next;
+} element;
+
+typedef element * listPosition;
+
+// head for a double linked list
+typedef struct list {
+    element *head;
+    memFreeFunc *freeFunc;
+} list;
+
+
+
+//create empty list, constructor
+list *listEmpty(void);
+
+
+// set mem handler
+void listSetMemHandler(list *l, memFreeFunc *f);
+
+
+// return first position
+listPosition listFirst(list *l);
+
+// reutrn last position
+listPosition listLast(list *l);
+
+// get next position
+listPosition listNext(listPosition p);
+
+// get previous position
+listPosition listPrevious(listPosition p);
+
+// is list empty
+bool listIsEmpty(list *l);
+
+// insert list element
+listPosition listInsert(listPosition p,data d);
+
+// inspect list element
+data* listInspect(listPosition p);
+
+// remove list element
+listPosition listRemove(list *l, listPosition p);
+
+// free memory
+void listFree(list *l);
+
+// check if end of list
+bool listIsEnd(list *l, listPosition p);

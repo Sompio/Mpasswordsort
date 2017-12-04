@@ -1,0 +1,3 @@
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/cmake-build-debug/CMakeFiles/ou1.dir

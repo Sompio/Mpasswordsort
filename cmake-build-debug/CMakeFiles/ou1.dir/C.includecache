@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/list.c
+list.h
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/list.h
+
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/list.h
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/mpasswdsort.c
+mpasswdsort.h
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/mpasswdsort.h
+
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/mpasswdsort.h
+stdio.h
+-
+list.h
+/Users/per-joelsompio/Documents/Systemnära prog/ou1/list.h
+string.h
+-
+

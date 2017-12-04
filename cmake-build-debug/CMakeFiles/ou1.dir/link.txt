@@ -1,0 +1,1 @@
+/usr/bin/cc  -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ou1.dir/list.c.o CMakeFiles/ou1.dir/mpasswdsort.c.o  -o ou1 
